@@ -3,7 +3,7 @@ function mincost(arr)
 //write your code here
 	totalCost= 0;
 	while(arr.length>1){
-		arr.sort();
+		arr.sort((a,b)=>a-b);
 		let firstSmallest = arr.shift();
 		let secondSmallest = arr.shift();
 		 let smallestCost = firstSmallest + secondSmallest;
